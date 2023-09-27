@@ -97,12 +97,14 @@ h1, h2{
 }
 
 #duvidas {
+    flex-direction: column;
     display: flex;
     align-items: center;
     gap: 32px;
     padding: 32px 40px;
+    position: relative;
 }
-
+/* 
 .duvida1 {
     position: relative;
 }
@@ -118,9 +120,9 @@ h1, h2{
     position: absolute;
     top: 32px;
     right: 24px;
-}
+} */
 
-.duvida1 .paragrafo {
+/* .duvida1 .paragrafo {
     border-radius: 0 0 8px 8px;
     border-bottom: 1px solid salmon;
     border-left: 1px solid salmon;
@@ -153,11 +155,11 @@ h1, h2{
     border-right: 1px solid salmon;
     margin-top: -8px;
     padding: 24px;
-}
-
-/* .duvida {
-    position: relative;
 } */
+
+.duvida {
+    position: relative;
+}
 
 footer {
     background-color: rgb(255, 152, 108, 0.25);
