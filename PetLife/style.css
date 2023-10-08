@@ -1,205 +1,181 @@
-*{
+* {
     box-sizing: border-box;
-    font-family: 'Mooli', sans-serif;
+    font-family: "Mooli", sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body{
+  }
+  body {
     color: indigo;
-}
-
-header{
+  }
+  header {
     background-color: rgb(227, 163, 140);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-header nav a{
-    color: #FFFFFF;
-    padding: 32px;
+    padding: 24px 80px 24px 80px;
+  }
+  
+  header nav a {
+    color: #ffffff;
     font-weight: 600;
+    padding: 32px;
     text-decoration: none;
-}
-
-#inicio {
-    display:flex;
+  }
+  
+  #inicio {
+    display: flex;
     align-items: center;
     gap: 32px;
-    /*topo, direita, baixo, esquerda*/
+    /* top, left, bottom, right*/
     padding: 24px 80px 128px 80px;
     position: relative;
-}
-
-h1, h2{
+  }
+  h1,
+  h2 {
     font-weight: 600;
     font-size: 32px;
     margin-bottom: 32px;
-}
-
-.paragrafo {
+  }
+  
+  .paragraph {
     line-height: 150%;
     margin-bottom: 32px;
-}
-
-.botao {
+    text-align: justify;
+  }
+  
+  .button {
     background-color: salmon;
-    border-radius: 8px;
-    color: #FFFFFF;
+    /* vertical, horizontal*/
     padding: 16px 32px;
+    border-radius: 8px;
     text-decoration: none;
-}
-
-.botao-transparente {
+    color: #ffffff;
+  }
+  
+  .button-transparent {
     background-color: transparent;
     color: salmon;
     padding: 16px 32px;
+    /* espaça a linha abaixo do link*/
     text-underline-offset: 4px;
-}
-
-.absolute {
+  }
+  .absolute {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
+    /*Joga os elementos para trás*/
     z-index: -10;
-}
-
-#clinica {
+  }
+  
+  #clinica {
     display: flex;
-    align-self: center;
+    align-items: center;
     gap: 64px;
     padding: 64px 80px;
-}
-
-#clinica li {
+  }
+  #clinica li {
     margin-bottom: 16px;
     margin-left: 32px;
-}
-
-#farmacia {
+  }
+  
+  #farmacia {
     padding: 64px 80px;
     text-align: center;
-}
-
-#farmacia img {
+  }
+  
+  #farmacia img {
     margin: 64px auto;
-}
-
-#farmacia .paragraform {
+  }
+  
+  #farmacia .paragraph {
     max-width: 950px;
     margin: 0 auto;
-}
-
-#duvidas {
+  }
+  
+  #duvidas {
     flex-direction: column;
     display: flex;
     align-items: center;
     gap: 32px;
     padding: 32px 40px;
+    position:relative;
+  }
+  .duvida {
     position: relative;
-}
-/* 
-.duvida1 {
-    position: relative;
-}
-
-.duvida1 h3 {
+  }
+  .duvida h3 {
     border: 2px solid salmon;
     border-radius: 8px;
     cursor: pointer;
     padding: 24px;
-}
-
-.duvida1 img {
+    font-size: 1rem;
+  }
+  
+  .duvida img {
     position: absolute;
     top: 32px;
     right: 24px;
-} */
-
-/* .duvida1 .paragrafo {
+  }
+  .duvida .paragraph {
+    border-right: 1px solid #ff725e;
+    border-bottom: 1px solid #ff725e;
+    border-left: 1px solid #ff725e;
     border-radius: 0 0 8px 8px;
-    border-bottom: 1px solid salmon;
-    border-left: 1px solid salmon;
-    border-right: 1px solid salmon;
     margin-top: -8px;
+    padding: 0px 24px;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+    transition: 0.2s;
+  }
+  
+  .duvida.ativa .paragraph {
+    height: fit-content;
+    opacity: 1;
     padding: 24px;
-}
-
-.duvida2 {
-    position: relative;
-}
-
-.duvida2 h3 {
-    border: 2px solid salmon;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 24px;
-}
-
-.duvida2 img {
-    position: absolute;
-    top: 32px;
-    right: 24px;
-}
-
-.duvida2 .paragrafo {
-    border-radius: 0 0 8px 8px;
-    border-bottom: 1px solid salmon;
-    border-left: 1px solid salmon;
-    border-right: 1px solid salmon;
-    margin-top: -8px;
-    padding: 24px;
-} */
-
-.duvida {
-    position: relative;
-}
-
-footer {
-    background-color: rgb(255, 152, 108, 0.25);
+  }
+  
+  footer {
+    background-color: rgba(255, 152, 108, 0.25);
     display: flex;
     justify-content: space-between;
     gap: 80px;
     padding: 64px 80px;
-}
-
-.footer img, footer .titulo {
+  }
+  
+  footer img,
+  footer .titulo {
+    display: block;
     font-weight: 600;
     margin-bottom: 24px;
+  }
+  
+  footer nav a {
     display: block;
-}
-
-footer nav a {
-    color:rgb(15, 15, 15);
-    display: block;
+    color: rgb(15, 15, 15);
     margin-bottom: 16px;
     text-decoration: none;
-}
-
-footer p {
+  }
+  
+  footer p {
     margin-bottom: 16px;
     max-width: 350px;
-}
-
-footer p a {
+  }
+  
+  footer p a {
     color: rgb(15, 15, 15);
     text-decoration: none;
-}
-
-#copyright {
-    background-color: black;
-    padding: 24px;
-    color: #FFFFFF;
+  }
+  
+  #copyright {
+    background-color: rgb(40, 1, 54);
     text-align: center;
-}
-
-#copyright a {
+    padding: 24px;
+    color: #ffffff;
+  }
+  
+  #copyright a {
     color: salmon;
     text-decoration: none;
-}
+  }

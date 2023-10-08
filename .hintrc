@@ -3,6 +3,21 @@
     "development"
   ],
   "hints": {
-    "disown-opener": "off"
-  }
+    "disown-opener": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "text-underline-offset",
+          "height: fit-content"
+        ]
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 116",
+    "not firefox <= 117"
+  ]
 }
